@@ -20,16 +20,6 @@ Trulioo, which was founded in 2011 by Stephen Ufford and Tanis Jorge, allows com
 - *Post-Money Valuation: $1.75B on Jun 07, 2021*
 - *Accelerators: Plug and Play Tech Center*
 
-<iframe
-width="640"
-height="480"
-src="https://youtu.be/TmG9O_Tbc1Q"
-frameborder="0"
-allow="autoplay; encrypted-media"
-allowfullscreen
->
-</iframe>
-
 ---
 ### 1.1. Trulioo Idea
 After starting multiple data-driven businesses together, Stephen Ufford and Tanis Jorge recognized the importance of individuals having online identities, particularly in developing countries where many don’t have a formal record of their existence. Stephen and Tanis launched Trulioo as an identity verification
@@ -42,16 +32,16 @@ Trulioo had 8 successful fund rising [3] that you can find details in below tabl
 
 <div align="center">
 
-| Funding Date  |  Funding Amount  | Funding Round  | Investors  |   |
-|:-------:|:---:|:---:|:---:|---|
-|Jun 07, 2021   | $394M            | Series D       | TCV, Blumberg Capital, Citi Ventures, American Express Ventures, Mouro Capital  |   |
-|Sep 17, 2019   | $52.9M           | Series C       | Goldman Sachs, Citi Ventures, American Express Ventures, Mouro Capital  |   |
-|Jul 31, 2018   | $8.3M            | Series B       | BDC, Blumberg Capital   |   |
-|Dec 14, 2015   | $12.3M            | Series B       | BDC, Blumberg Capital   |   |
-|Aug 26, 2014   | $1M              | Convertable Note       | UST  |   |
-|Mar 11, 2014   | $6M              | Series A       | Tenfor Holding  |   |
-|May 29, 2012   | $2M              | Seed Round       | Blumberg Capital  |   |
-|Jan 01, 2011   | CA$300K              | Angle Round       | Stephen Ufford  |   |
+| Funding Date  |  Funding Amount  | Funding Round  | Investors  |
+|:-------:|:---:|:---:|:---:|
+|Jun 07, 2021   | $394M            | Series D       | TCV, Blumberg Capital, Citi Ventures, American Express Ventures, Mouro Capital  |
+|Sep 17, 2019   | $52.9M           | Series C       | Goldman Sachs, Citi Ventures, American Express Ventures, Mouro Capital  |
+|Jul 31, 2018   | $8.3M            | Series B       | BDC, Blumberg Capital   |
+|Dec 14, 2015   | $12.3M            | Series B       | BDC, Blumberg Capital   |
+|Aug 26, 2014   | $1M              | Convertable Note       | UST  |
+|Mar 11, 2014   | $6M              | Series A       | Tenfor Holding  |
+|May 29, 2012   | $2M              | Seed Round       | Blumberg Capital  |
+|Jan 01, 2011   | CA$300K              | Angle Round       | Stephen Ufford  |
 
 </div>
 
@@ -126,13 +116,12 @@ Trulioo is continually adding new data sources and technology to expand identity
 
 *Identity validation system and associated methods (Filed 2014-04-14/ Granted 2017-03-28)*
 
-    A computer system and associated methods for verifying user identities online. Identity claims made by a requestor of an online access and/or a trusted transaction may be verified by associating digital credentials to verified personal identification information (PII) retrieved from real world events. PII item(s) may be retrieved from third-party verified identity information sources. Verified personal attributes related to PII items may be identified and correlated with the requestor's digital credentials, and stored to a verified identity record. Additional digital credentials for the same requestor may be similarly identified, correlated, and stored to the verified identity record. A subsequent transaction request by a person claiming the requestor's identity may be compared with the verified identity record. An identity match indicator and/or a match confidence score may be created and used to determine the risk that the identity claim by the person requesting the transaction is false. 
+* A computer system and associated methods for verifying user identities online. Identity claims made by a requestor of an online access and/or a trusted transaction may be verified by associating digital credentials to verified personal identification information (PII) retrieved from real world events. PII item(s) may be retrieved from third-party verified identity information sources. Verified personal attributes related to PII items may be identified and correlated with the requestor's digital credentials, and stored to a verified identity record. Additional digital credentials for the same requestor may be similarly identified, correlated, and stored to the verified identity record. A subsequent transaction request by a person claiming the requestor's identity may be compared with the verified identity record. An identity match indicator and/or a match confidence score may be created and used to determine the risk that the identity claim by the person requesting the transaction is false. 
 
 *Commerce websites Marketing terminology Social networking services Identity management Integrated Services Digital Network
 System, method, and computer program product for verifying the identity of social network users (Filed 2010-03-25 / Granted 2012-11-20)*
 
-    An advanced identity verification system, method, and computer program product are provided that enable a user to create and individualize a repository of identifying data, and then incorporate that repository into processes that require reliable identification of an individual. Real-world acquaintances of the user can be queried to determine the accuracy of identifying data in the repository. As more and more acquaintances respond concerning a particular item of identifying data, a numeric accuracy index may be provided that permits an inquiring party to determine whether the identifying data may be trusted.
-
+* An advanced identity verification system, method, and computer program product are provided that enable a user to create and individualize a repository of identifying data, and then incorporate that repository into processes that require reliable identification of an individual. Real-world acquaintances of the user can be queried to determine the accuracy of identifying data in the repository. As more and more acquaintances respond concerning a particular item of identifying data, a numeric accuracy index may be provided that permits an inquiring party to determine whether the identifying data may be trusted.
 
 ---
 ### 2.4. Trulioo Technologies
@@ -151,7 +140,7 @@ Some of the technologies that Trulioo used in GlobalGateway are listed below[8]:
 - Hadoop 
 - NGNIX
 - Docker
-- 
+ 
 
 ---
 ## **3. Landscape:**
@@ -265,8 +254,6 @@ Unfortunately, couldn’t find vendors information about all above metrics so ba
 |Onfido  | SaaS | 195  | Yes | No | No | Yes |Yes |No |
 
 </div>
-
-
 
 ---
 ## **5. Recommendations**
