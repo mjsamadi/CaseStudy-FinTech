@@ -141,6 +141,48 @@ Some of the technologies that Trulioo used in GlobalGateway are listed below[8]:
 - NGNIX
 - Docker
  
+Trulioo developer portal is available at https://developer.trulioo.com/ and there are all required documents and sandbox environments for developers. 
+
+---
+### 2.5. Technical Overview
+The GlobalGateway Normalized API (NAPI) is a stateless web service based on RESTful architecture. The production endpoint is supported solely on HTTPS. All requests to the production endpoint must be SSL/TLS compliant. Please ensure you have the correct base URL for the API.
+Request and response body data are required to be in JSON format. The output JSON should not be treated as fixed or as a schema. New fields can be added as the API evolves. Clients must not rely on the order in which data appears in JSON service responses and should be resilient to the reordering of fields within a JSON object. The Content-Type header value must be set to application/json; We use built-in HTTP features, such as HTTP authentication, errors, and verbs that are understood by standard HTTP clients. For faster response times, include an Accept-Encoding header with a value of ‘gzip, deflate’ and responses will be gzipped.
+
+Trulioo solutions can be integrated in a simple four step method (with details explained after) as described in the workflow below:
+<div align="center">
+
+![Developers](Developers_Workflow.png)
+
+</div>
+
+**A) GlobalGateway API Login**
+Intended for customer applications to make Verification calls.
+Before testing the API the most important thing you will need is credentials. You can contact Trulioo support to receive live API credentials. You will need a username and password for authenticating your API calls. NAPI uses HTTP Basic Authentication.
+
+**B) Making a Test Verification**
+- Sandbox:
+
+If this is your first integration with GlobalGateway you should have access to a sandbox account. If you are unsure whether you have a sandbox environment, or how to access it, please refer to Sandbox vs. Live Environment.
+The sandbox environment is intended to let you get a feel for how the GlobalGateway API works, but does not perform live transactions against real data. Rather, it checks the given identity against a static test database hosted on GlobalGateway. For this reason you will need to use a test entity.
+
+- Test Entities:
+
+A test entity is a dummy identity provided by Trulioo, which matches a record in the GlobalGateway test database. Test entities can be safely verified in sandbox accounts without having any impact on real people or data.
+To obtain test entity data: Make a GlobalGateway API call to Get Test Entities.
+
+- Live API:
+
+Once you have completed your initial test of the API, you can contact Trulioo support to receive live API credentials. This will allow you to begin checking identities against live datasources, rather than the GlobalGateway hard-coded test entities.
+
+
+**C) API Integration**
+Let's start with verifying your first individual through the Trulioo GlobalGateway API. Each step builds upon the one before it, letting you in succession with a Trulioo solution. To get started with the API integration, refer to our Global API page for more information.
+
+**D) Implementation & Go Live:**
+At any point, if you are considering expanding or updating your integrations, you can refer back to the API Reference. It provides detailed documentation for all the endpoints for the GlobalGateway API and has an interactive web console so you can make your initial test calls straight from the browser.
+The Implementation team will be there every step of the way to help lead you through the process of going live and ensure you have a seamless and timely launch.
+
+
 
 ---
 ## **3. Landscape:**
@@ -239,7 +281,7 @@ Suggested core metrices to evaluate active companies in identity verification li
     - Documentation 
     - Training
 
-Unfortunately, couldn’t find vendors’ information about all the above metrics so based on available information makes digested metrics list [13] [14] [15] [16].
+Unfortunately, couldn’t find vendors’ information about all the above metrics so based on available information makes digested metrics list [13] [14] [15] [8].
 
 
 <div align="center">
@@ -273,7 +315,7 @@ Trulioo has the potential to launch B2C service and after identity verification,
 Current Trulioo's KYC solution works as an online enquirer-based model and the result of Identity verification is not trustable to share with any other parties. Any new party should verify the user’s KYC again with Trulioo. Trulioo can offer a solution that users make a KYC portable package that referred to Trulioo online identity verification with a specific validation time. 
 
 ---
-### 5.2. Technologies for New solution:
+### 5.2. Technologies for New Solution:
 
 
 **A. Age Detection by AI**
@@ -317,8 +359,6 @@ A peer-to-peer network is required as well as consensus algorithms to ensure rep
 
 [7] [Digital Journal](https://www.digitaljournal.com/pr/identity-verification-market-size-share-by-top-10-players-covered-major-segments-regions-and-key-drivers-outlook-2022-2031) - Identity Verification Market Size & Share by Top 10 Players
 
-Read more: https://www.digitaljournal.com/pr/identity-verification-market-size-share-by-top-10-players-covered-major-segments-regions-and-key-drivers-outlook-2022-2031#ixzz7UkzMysem
-
 [8] https://developer.trulioo.com/docs
 
 [9] [Mapping Canada’s maturing fintech market](https://www.pwc.com/ca/en/industries/technology/mapping-canadas-maturing-fintech-market.html) 
@@ -336,6 +376,5 @@ Read more: https://www.digitaljournal.com/pr/identity-verification-market-size-s
 [13] https://sourceforge.net/software/compare/Ondato-vs-Socure-vs-Trulioo-vs-Veriff/#claim_globalgateway.s
 
 [14] https://www.saashub.com/compare-trulioo-vs-veriff?ref=sidebar
-[15] https://developer.trulioo.com/docs
 
-[16]https://craft.co/trulioo/competitors?competitors=trulioo%2Cveriff%2Cjumio%2Confido%2Cverafin%2Csocure%2Cpersona-435
+[15]https://craft.co/trulioo/competitors?competitors=trulioo%2Cveriff%2Cjumio%2Confido%2Cverafin%2Csocure%2Cpersona-435
